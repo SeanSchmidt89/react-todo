@@ -9,7 +9,7 @@ const Todo = ({ todo, todos, title, setTodos }) => {
     <div>
       <li>
         {title}
-        <button onClick={deleteHandler}>Delete</button>
+        <button onClick={deleteHandler} className='todo-button' variant="outline-light">Delete</button>
       </li>
     </div>
   );
