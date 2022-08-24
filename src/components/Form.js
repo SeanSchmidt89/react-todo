@@ -23,7 +23,7 @@ const Form = ({ inputText, setInputText, setTodos }) => {
         value={inputText}
         placeholder="add a todo"
       />
-      <button onClick={buttonHandler}>Add</button>
+      <button onClick={buttonHandler} className='form-button'>Add</button>
     </div>
   );
 };
