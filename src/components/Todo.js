@@ -1,4 +1,5 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
 
 const Todo = ({ todo, todos, title, setTodos }) => {
   const deleteHandler = () => {
@@ -7,17 +8,17 @@ const Todo = ({ todo, todos, title, setTodos }) => {
   };
   return (
     <div>
-      <li>
+      <p>
         {title}
-        <button
+        <Button
           onClick={deleteHandler}
           className="todo-button"
           variant="outline-light"
           size="sm"
         >
           Delete
-        </button>
-      </li>
+        </Button>
+      </p>
     </div>
   );
 };
