@@ -23,7 +23,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Seans Todo List</h1>
+      <h1>SEANS TODO LIST</h1>
       <div className="todo-container">
         <div className="todo-list">
           <Form

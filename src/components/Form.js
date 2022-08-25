@@ -17,7 +17,7 @@ const Form = ({ inputText, setInputText, setTodos }) => {
   };
   return (
     <div>
-      <h2>Add</h2>
+      <h2>- Add -</h2>
       <input
         onChange={inputHandler}
         value={inputText}
