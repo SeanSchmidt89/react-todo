@@ -16,7 +16,7 @@ function App() {
       return todo.title.toLowerCase().includes(searchText);
     });
     setFilteredTodos(newFilteredTodos)
-  }, [searchText]);
+  }, [todos, searchText]);
 
   const searchHandler = (event) => {
     setSearchText(event.target.value.toLowerCase());
