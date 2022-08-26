@@ -6,7 +6,7 @@ const SearchList = ({ filteredTodos }) => {
       <h4>Todos :</h4>
       <hr />
       {filteredTodos.map((todo) => (
-        <p key={todo.id}>name: {todo.title}</p>
+        <p key={todo.id} className={todo.completed ? "completed " : ""}>Title : {todo.title}</p>
       ))}
     </div>
   );

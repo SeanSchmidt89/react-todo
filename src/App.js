@@ -8,15 +8,18 @@ import SearchList from "./components/SearchList";
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState(null);
   const [filteredTodos, setFilteredTodos] = useState([]);
 
   useEffect(() => {
     const newFilteredTodos = todos.filter((todo) => {
       return todo.title.toLowerCase().includes(searchText);
     });
-    setFilteredTodos(newFilteredTodos)
+    setFilteredTodos(newFilteredTodos);
   }, [todos, searchText]);
+  console.log("rednered");
+
+  console.log(filteredTodos);
 
   const searchHandler = (event) => {
     setSearchText(event.target.value.toLowerCase());
